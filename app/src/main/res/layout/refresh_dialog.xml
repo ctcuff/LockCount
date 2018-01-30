@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/number_picker_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            app:np_dividerColor="@color/colorPrimaryDark"
+            app:np_height="180dp"
+            app:np_max="23"
+            app:np_min="0"
+            app:np_selectedTextColor="@color/colorPrimary"
+            app:np_textColor="#000000"
+            app:np_textSize="16dp"
+            app:np_width="64dp" />
+
+        <com.shawnlin.numberpicker.NumberPicker
+            android:id="@+id/number_picker_minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:np_dividerColor="@color/colorPrimaryDark"
+            app:np_height="180dp"
+            app:np_max="59"
+            app:np_min="0"
+            app:np_selectedTextColor="@color/colorPrimary"
+            app:np_textColor="#000000"
+            app:np_textSize="16dp"
+            app:np_typeface="min"
+            app:np_width="64dp" />
+    </LinearLayout>
+
+</RelativeLayout>
